@@ -708,32 +708,22 @@
       </div>
     </div>
     <!-- FAQ Accordion Section -->
-    <div
-      class="according-container py-8"
-      style="background: linear-gradient(#d3e2ef, #f2e9d8)"
-    >
-      <div class="main-container mx-auto">
+    <div class="according-container">
+      <div class="main-container">
         <!-- Title Bar -->
-        <div
-          class="Accordind-title-bar bg-white text-center flex justify-center items-center shadow-xl px-4 py-6 mb-8"
-        >
-          <h1 class="text-3xl font-heading font-normal text-center">
-            Frequently Asked Questions (FAQs)
-          </h1>
+        <div class="accordind-title-bar">
+          <h1>Frequently Asked Questions (FAQs)</h1>
         </div>
 
         <!-- Accordions -->
-        <div class="accordion-section space-y-4">
+        <div class="accordion-section">
           <!-- Accordion Item 1 -->
-          <div class="accordion-item border rounded-2xl bg-white shadow-md">
-            <button
-              class="accordion-button flex justify-between items-center w-full px-6 py-4 text-left font-semibold"
-              onclick="toggleAccordion(this)"
-            >
+          <div class="accordion-item">
+            <button class="accordion-button" onclick="toggleAccordion(this)">
               <span>What types of boxes can you print?</span>
-              <span class="text-gray-500">+</span>
+              <span class="accordion-icon">+</span>
             </button>
-            <div class="accordion-content px-6">
+            <div class="accordion-content">
               We offer a wide range of box printing services, including custom
               sizes, shapes, and designs. Whether you need retail packaging,
               shipping boxes, or specialty designs, we can handle it all.
@@ -741,30 +731,24 @@
           </div>
 
           <!-- Accordion Item 2 -->
-          <div class="accordion-item border rounded-2xl bg-white shadow-md">
-            <button
-              class="accordion-button flex justify-between items-center w-full px-6 py-4 text-left font-semibold"
-              onclick="toggleAccordion(this)"
-            >
+          <div class="accordion-item">
+            <button class="accordion-button" onclick="toggleAccordion(this)">
               <span>Can I provide my own design for the boxes?</span>
-              <span class="text-gray-500">+</span>
+              <span class="accordion-icon">+</span>
             </button>
-            <div class="accordion-content px-6">
+            <div class="accordion-content">
               Absolutely! You can provide your own design, or our design team
               can work with you to create a custom look that fits your brand.
             </div>
           </div>
 
           <!-- Accordion Item 3 -->
-          <div class="accordion-item border rounded-2xl bg-white shadow-md">
-            <button
-              class="accordion-button flex justify-between items-center w-full px-6 py-4 text-left font-semibold"
-              onclick="toggleAccordion(this)"
-            >
+          <div class="accordion-item">
+            <button class="accordion-button" onclick="toggleAccordion(this)">
               <span>What is the minimum order quantity?</span>
-              <span class="text-gray-500">+</span>
+              <span class="accordion-icon">+</span>
             </button>
-            <div class="accordion-content px-6">
+            <div class="accordion-content">
               Our minimum order quantity varies depending on the type and size
               of the box, but we strive to accommodate both small and large
               orders.
@@ -772,15 +756,12 @@
           </div>
 
           <!-- Accordion Item 4 -->
-          <div class="accordion-item border rounded-2xl bg-white shadow-md">
-            <button
-              class="accordion-button flex justify-between items-center w-full px-6 py-4 text-left font-semibold"
-              onclick="toggleAccordion(this)"
-            >
+          <div class="accordion-item">
+            <button class="accordion-button" onclick="toggleAccordion(this)">
               <span>How long does it take to complete an order?</span>
-              <span class="text-gray-500">+</span>
+              <span class="accordion-icon">+</span>
             </button>
-            <div class="accordion-content px-6">
+            <div class="accordion-content">
               Production times depend on the complexity and quantity of your
               order. We typically complete orders within 7-10 business days, but
               we also offer expedited services if you’re on a tight deadline.
@@ -788,15 +769,12 @@
           </div>
 
           <!-- Accordion Item 5 -->
-          <div class="accordion-item border rounded-2xl bg-white shadow-md">
-            <button
-              class="accordion-button flex justify-between items-center w-full px-6 py-4 text-left font-semibold"
-              onclick="toggleAccordion(this)"
-            >
+          <div class="accordion-item">
+            <button class="accordion-button" onclick="toggleAccordion(this)">
               <span>Do you offer eco-friendly packaging options?</span>
-              <span class="text-gray-500">+</span>
+              <span class="accordion-icon">+</span>
             </button>
-            <div class="accordion-content px-6">
+            <div class="accordion-content">
               Yes, we offer eco-friendly materials and printing options to help
               reduce environmental impact while maintaining high-quality
               results.
@@ -805,579 +783,246 @@
         </div>
       </div>
     </div>
+
     <!--Quote form  -->
-    <div class="form-container py-4 bg-cover bg-center">
-      <div class="main-container mx-auto px-4">
-        <div class="flex flex-col sm:flex-row">
-          <div class="form-content sm:w-full w-[45%]">
-            <h1
-              class="text-4xl text-white tracking-wide font-heading leading-[3rem]"
-            >
-              Immediate Box Printing
-            </h1>
-            <p class="text-white mb-6">
-              When You Have
-              <span class="text-yellow-400">Immediate Box Printing</span> Need,
-              We Can Typically Turn Your Quote Around In Minutes.
-            </p>
-            <form>
-              <!-- First Row: Length, Width, Height -->
-              <div class="flex flex-wrap -mx-2">
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="length"
-                    >Length (inch) <span class="text-red-500">*</span></label
-                  >
-                  <input
-                    id="length"
-                    name="length"
-                    type="text"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                    required
-                  />
-                </div>
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="width"
-                    >Width (inch) <span class="text-red-500">*</span></label
-                  >
-                  <input
-                    id="width"
-                    name="width"
-                    type="text"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                    required
-                  />
-                </div>
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="height"
-                    >Height (inch) <span class="text-red-500">*</span></label
-                  >
-                  <input
-                    id="height"
-                    name="height"
-                    type="text"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                    required
-                  />
-                </div>
-              </div>
-
-              <!-- Second Row: Stock Option, Print Option, Finishing Option -->
-              <div class="flex flex-wrap -mx-2">
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="stockOption"
-                    >Stock Option</label
-                  >
-                  <select
-                    id="stockOption"
-                    name="stockOption"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                  >
-                    <option value="">Select Print Option</option>
-                    <option value="Full_Color_Printing">
-                      Full Color Printing
-                    </option>
-                    <option value="1_Color_Printing">1 Color Printing</option>
-                    <option value="2_Color_Printing">2 Color Printing</option>
-                    <option value="3_Color_Printing">3 Color Printing</option>
-                    <option value="No_Printing">No Printing</option>
-                    <option value="PMS_Color_Printing">
-                      PMS Color Printing
-                    </option>
-                  </select>
-                </div>
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="printOption"
-                    >Print Option</label
-                  >
-                  <select
-                    id="printOption"
-                    name="printOption"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                  >
-                    <option value="">Select Stock Option</option>
-                    <option value="14_pt_Card_Stock">14 pt. Card Stock</option>
-                    <option value="16_pt_Card_Stock">16 pt. Card Stock</option>
-                    <option value="18_pt_Card_Stock">18 pt. Card Stock</option>
-                    <option value="24_pt_Card_Stock">24 pt. Card Stock</option>
-                    <option value="Brown_Kraft_Stock">Brown Kraft Stock</option>
-                    <option value="White_Kraft_Stock">White Kraft Stock</option>
-                    <option value="Brown_Corrugated">Brown Corrugated</option>
-                    <option value="White_Corrugated">White Corrugated</option>
-                    <option value="Texture_Stock">Texture Stock</option>
-                    <option value="Linen_Stock">Linen Stock</option>
-                    <option value="Other">Other</option>
-                  </select>
-                </div>
-                <div class="w-1/3 px-2 mb-1">
-                  <label
-                    class="text-white text-xs mb-2 block"
-                    for="finishingOption"
-                    >Finishing Option</label
-                  >
-                  <select
-                    id="finishingOption"
-                    name="finishingOption"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                  >
-                    <option value="">Select Finishing Option</option>
-                    <option value="Matte_Finish">Matte Finish</option>
-                    <option value="Spot_UV">
-                      Spot UV (Matte Surface + Glossy)
-                    </option>
-                    <option value="Aqueous_Coating">Aqueous Coating</option>
-                    <option value="Semi_Gloss_Finish">Semi Gloss Finish</option>
-                    <option value="Gold_Foiling">
-                      Gold Foiling (Glossy or Matte Finish)
-                    </option>
-                    <option value="Silver_Foiling">
-                      Silver Foiling (Glossy or Matte Finish)
-                    </option>
-                    <option value="Holographic_Foiling">
-                      Holographic Foiling (Glossy or Matte Finish)
-                    </option>
-                    <option value="Others">Others</option>
-                  </select>
-                </div>
-              </div>
-
-              <!-- Third Row: Quantity, Full Name, Email -->
-              <div class="flex flex-wrap -mx-2">
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="quantity"
-                    >Quantity <span class="text-red-500">*</span></label
-                  >
-                  <input
-                    id="quantity"
-                    name="quantity"
-                    type="number"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                    required
-                  />
-                </div>
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="fullName"
-                    >Full Name <span class="text-red-500">*</span></label
-                  >
-                  <input
-                    id="fullName"
-                    name="fullName"
-                    type="text"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                    required
-                  />
-                </div>
-                <div class="w-1/3 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="company"
-                    >Company Name</label
-                  >
-                  <input
-                    id="company"
-                    name="company "
-                    type="text"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                  />
-                </div>
-              </div>
-              <div class="flex flex-wrap -mx-2">
-                <div class="w-1/2 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="Phone"
-                    >Phone Num
-                  </label>
-                  <input
-                    id="Phone"
-                    name="Phone"
-                    type="number"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                  />
-                </div>
-
-                <div class="w-1/2 px-2 mb-1">
-                  <label class="text-white text-xs mb-2 block" for="email"
-                    >Email Address <span class="text-red-500">*</span></label
-                  >
-                  <input
-                    id="email"
-                    name="email"
-                    type="email"
-                    class="w-full px-2 py-2 border focus:outline-none"
-                    required
-                  />
-                </div>
-              </div>
-
-              <!-- Fourth Row: Job Details (Full Width) -->
-              <div class="mb-6">
-                <label class="text-white text-xs mb-2 block" for="jobDetails"
-                  >Details</label
+    <div class="form-container">
+      <div class="main-container">
+        <div class="form-content">
+          <h1>Immediate Box Printing</h1>
+          <p>
+            When You Have <span>Immediate Box Printing</span> Need, We Can
+            Typically Turn Your Quote Around In Minutes.
+          </p>
+          <form>
+            <!-- First Row: Length, Width, Height -->
+            <div class="form-row thirds">
+              <div class="field">
+                <label for="length"
+                  >Length (inch) <span style="color: red">*</span></label
                 >
-                <textarea
-                  id="jobDetails"
-                  name="jobDetails"
-                  rows="8"
-                  class="w-full px-2 py-2 border focus:outline-none"
-                  placeholder="Type Your Needs Here in Details"
-                ></textarea>
+                <input id="length" name="length" type="text" required />
               </div>
-
-              <!-- Submit Button -->
-              <div class="flex justify-start">
-                <button
-                  type="submit"
-                  class="text-black px-6 py-2 rounded flex items-center font-buttons"
-                  style="background: var(--yellow)"
+              <div class="field">
+                <label for="width"
+                  >Width (inch) <span style="color: red">*</span></label
                 >
-                  Get Price Quote <i class="fas fa-angle-right ml-2"></i>
-                </button>
+                <input id="width" name="width" type="text" required />
               </div>
-            </form>
-          </div>
+              <div class="field">
+                <label for="height"
+                  >Height (inch) <span style="color: red">*</span></label
+                >
+                <input id="height" name="height" type="text" required />
+              </div>
+            </div>
+
+            <!-- Second Row: Stock Option, Print Option, Finishing Option -->
+            <div class="form-row thirds">
+              <div class="field">
+                <label for="stockOption">Stock Option</label>
+                <select id="stockOption" name="stockOption">
+                  <option value="">Select Print Option</option>
+                  <option value="Full_Color_Printing">
+                    Full Color Printing
+                  </option>
+                  <option value="1_Color_Printing">1 Color Printing</option>
+                  <option value="2_Color_Printing">2 Color Printing</option>
+                  <option value="3_Color_Printing">3 Color Printing</option>
+                  <option value="No_Printing">No Printing</option>
+                  <option value="PMS_Color_Printing">PMS Color Printing</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="printOption">Print Option</label>
+                <select id="printOption" name="printOption">
+                  <option value="">Select Stock Option</option>
+                  <option value="14_pt_Card_Stock">14 pt. Card Stock</option>
+                  <option value="16_pt_Card_Stock">16 pt. Card Stock</option>
+                  <option value="18_pt_Card_Stock">18 pt. Card Stock</option>
+                  <option value="24_pt_Card_Stock">24 pt. Card Stock</option>
+                  <option value="Brown_Kraft_Stock">Brown Kraft Stock</option>
+                  <option value="White_Kraft_Stock">White Kraft Stock</option>
+                  <option value="Brown_Corrugated">Brown Corrugated</option>
+                  <option value="White_Corrugated">White Corrugated</option>
+                  <option value="Texture_Stock">Texture Stock</option>
+                  <option value="Linen_Stock">Linen Stock</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="finishingOption">Finishing Option</label>
+                <select id="finishingOption" name="finishingOption">
+                  <option value="">Select Finishing Option</option>
+                  <option value="Matte_Finish">Matte Finish</option>
+                  <option value="Spot_UV">
+                    Spot UV (Matte Surface + Glossy)
+                  </option>
+                  <option value="Aqueous_Coating">Aqueous Coating</option>
+                  <option value="Semi_Gloss_Finish">Semi Gloss Finish</option>
+                  <option value="Gold_Foiling">
+                    Gold Foiling (Glossy or Matte Finish)
+                  </option>
+                  <option value="Silver_Foiling">
+                    Silver Foiling (Glossy or Matte Finish)
+                  </option>
+                  <option value="Holographic_Foiling">
+                    Holographic Foiling (Glossy or Matte Finish)
+                  </option>
+                  <option value="Others">Others</option>
+                </select>
+              </div>
+            </div>
+
+            <!-- Third Row: Quantity, Full Name, Email -->
+            <div class="form-row thirds">
+              <div class="field">
+                <label for="quantity"
+                  >Quantity <span style="color: red">*</span></label
+                >
+                <input id="quantity" name="quantity" type="number" required />
+              </div>
+              <div class="field">
+                <label for="fullName"
+                  >Full Name <span style="color: red">*</span></label
+                >
+                <input id="fullName" name="fullName" type="text" required />
+              </div>
+              <div class="field">
+                <label for="company">Company Name</label>
+                <input id="company" name="company" type="text" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="Phone">Phone Num</label>
+                <input id="Phone" name="Phone" type="number" />
+              </div>
+              <div class="field">
+                <label for="email"
+                  >Email Address <span style="color: red">*</span></label
+                >
+                <input id="email" name="email" type="email" required />
+              </div>
+            </div>
+
+            <!-- Fourth Row: Job Details (Full Width) -->
+            <div class="mb-1">
+              <label for="jobDetails">Details</label>
+              <textarea
+                id="jobDetails"
+                name="jobDetails"
+                rows="8"
+                placeholder="Type Your Needs Here in Details"
+              ></textarea>
+            </div>
+
+            <!-- Submit Button -->
+            <div>
+              <button type="submit" class="button-submit">
+                Get Price Quote <i class="fas fa-angle-right"></i>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
+
     <!-- review sections -->
-    <div class="testimonials-containers">
-      <div class="main-container">
-        <section class="py-12 sm:py-16 lg:py-20">
-          <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-            <div class="flex flex-col items-center">
-              <div class="text-center">
-                <p class="text-lg font-medium text-gray-600 font-pj">
-                  2,157 people have said how good Rareblocks
-                </p>
-                <h2
-                  class="mt-4 text-3xl font-bold text-gray-900 sm:text-4xl xl:text-5xl font-pj"
-                >
-                  Our happy clients say about us
-                </h2>
-              </div>
+    <div class="testimonials-container main-container">
+      <!-- Header Section -->
+      <div class="review-header-section">
+        <p>2,157 people have said how good Rareblocks</p>
+        <h2>Our happy clients say about us</h2>
+      </div>
 
-              <div class="mt-8 text-center md:mt-16 md:order-3">
-                <a
-                  href="#"
-                  class="pb-2 text-base font-bold leading-7 text-gray-900 transition-all duration-200 border-b-2 border-gray-900 hover:border-gray-600 font-pj focus:outline-none focus:ring-1 focus:ring-gray-900 focus:ring-offset-2 hover:text-gray-600"
-                >
-                  Check all 2,157 reviews
-                </a>
-              </div>
+      <!-- Reviews Link -->
+      <div>
+        <a href="#" class="reviews-link">Check all 2,157 reviews</a>
+      </div>
 
-              <div class="relative mt-10 md:mt-24 md:order-2">
-                <div
-                  class="absolute -inset-x-1 inset-y-16 md:-inset-x-2 md:-inset-y-6"
-                >
-                  <div
-                    class="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter"
-                    style="
-                      background: linear-gradient(
-                        90deg,
-                        #44ff9a -0.55%,
-                        #44b0ff 22.86%,
-                        #8b44ff 48.36%,
-                        #ff6644 73.33%,
-                        #ebff70 99.34%
-                      );
-                    "
-                  ></div>
-                </div>
-
-                <div
-                  class="relative grid max-w-full grid-cols-3 gap-6 mx-auto md:max-w-none lg:gap-10 sm:grid-cols-1"
-                >
-                  <!-- Testimonial Card 1 -->
-                  <div class="flex flex-col overflow-hidden shadow-xl">
-                    <div
-                      class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7"
-                    >
-                      <div class="flex-1">
-                        <div class="flex items-center">
-                          <div class="flex text-[#FDB241]">
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <blockquote class="mt-5">
-                          <p class="text-lg leading-relaxed text-gray-900">
-                            “Value Box delivered high-quality packaging with
-                            vibrant prints. Fast turnaround and great customer
-                            service!.”
-                          </p>
-                        </blockquote>
-                      </div>
-                      <div class="flex items-center mt-8">
-                        <img
-                          class="w-12 h-12 rounded-full"
-                          src="/images/avatar-male-1.png"
-                          alt="Client Image 1"
-                        />
-                        <div class="ml-4">
-                          <p class="text-base font-bold text-gray-900">
-                            John Doe
-                          </p>
-                          <p class="mt-0.5 text-sm text-gray-600">
-                            CEO, Company
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonial Card 1 -->
-                  <div class="flex flex-col overflow-hidden shadow-xl">
-                    <div
-                      class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7"
-                    >
-                      <div class="flex-1">
-                        <div class="flex items-center">
-                          <div class="flex text-[#FDB241]">
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <blockquote class="mt-5">
-                          <p class="text-lg leading-relaxed text-gray-900">
-                            “Great experience! Value Box helped me choose the
-                            perfect packaging, and the prices were unbeatable.”
-                          </p>
-                        </blockquote>
-                      </div>
-                      <div class="flex items-center mt-8">
-                        <img
-                          class="w-12 h-12 rounded-full"
-                          src="/images/avatar-male-2.png"
-                          alt="Client Image 1"
-                        />
-                        <div class="ml-4">
-                          <p class="text-base font-bold text-gray-900">
-                            John Doe
-                          </p>
-                          <p class="mt-0.5 text-sm text-gray-600">
-                            CEO, Company
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonial Card 1 -->
-                  <div class="flex flex-col overflow-hidden shadow-xl">
-                    <div
-                      class="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7"
-                    >
-                      <div class="flex-1">
-                        <div class="flex items-center">
-                          <div class="flex text-[#FDB241]">
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                            <svg
-                              class="w-5 h-5"
-                              xmlns="http://www.w3.org/2000/svg"
-                              fill="currentColor"
-                              viewBox="0 0 20 20"
-                            >
-                              <path
-                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <blockquote class="mt-5">
-                          <p class="text-lg leading-relaxed text-gray-900">
-                            “Impressed with the custom die-cut boxes! Value
-                            Box's attention to detail is amazing.”
-                          </p>
-                        </blockquote>
-                      </div>
-                      <div class="flex items-center mt-8">
-                        <img
-                          class="w-12 h-12 rounded-full"
-                          src="/images/avatar-female.png"
-                          alt="Client Image 1"
-                        />
-                        <div class="ml-4">
-                          <p class="text-base font-bold text-gray-900">
-                            John Doe
-                          </p>
-                          <p class="mt-0.5 text-sm text-gray-600">
-                            CEO, Company
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Add additional testimonial cards similarly -->
-                </div>
-              </div>
+      <!-- Testimonials Grid -->
+      <div
+        class="testimonials-grid"
+        style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
+      >
+        <!-- Testimonial Card 1 -->
+        <div class="testimonial-card">
+          <div class="star-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            “Impressed with the custom die-cut boxes! Value Box's attention to
+            detail is amazing.”
+          </blockquote>
+          <div class="client-info">
+            <img src="/images/avatar-female.png" alt="Client Image 1" />
+            <div class="client-details">
+              <p class="client-name">Jenny Wilson</p>
+              <p class="client-title">CEO, Company</p>
             </div>
           </div>
-        </section>
+        </div>
+        <div class="testimonial-card">
+          <div class="star-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+
+          <blockquote>
+            “Value Box delivered high-quality packaging with vibrant prints.
+            Fast turnaround and great customer service!”
+          </blockquote>
+          <div class="client-info">
+            <img src="/images/avatar-male-1.png" alt="Client Image 1" />
+            <div class="client-details">
+              <p class="client-name">John Doe</p>
+              <p class="client-title">CEO, Company</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="star-rating">
+            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+            ><i class="fa-solid fa-star"></i>
+          </div>
+          <blockquote>
+            “Great experience! Value Box helped me choose the perfect packaging,
+            and the prices were unbeatable.”
+          </blockquote>
+          <div class="client-info">
+            <img src="/images/avatar-male-2.png" alt="Client Image 1" />
+            <div class="client-details">
+              <p class="client-name">Jacob Jones</p>
+              <p class="client-title">CEO, Company</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Additional Testimonial Cards can be added in the same structure -->
       </div>
     </div>
     <!-- footer top newsletter -->
-    <div class="w-full text-white bg-zinc-800 px-4 sm:px-0">
+    <div class="footer-top-container">
       <div class="main-container">
-        <div
-          class="max-w-[1290px] mx-auto grid grid-cols-3 sm:grid-cols-1 sm:px-4"
-        >
-          <div class="col-span-2 my-4 sm:mb-0 sm:w-full">
-            <h1
-              class="sm:text-[18px] font-heading text-4xl sm:leading-[30px] capitalize py-2"
-            >
+        <div class="grid-container">
+          <div class="content">
+            <h1 class="heading">
               Sign up for exclusive promotions on
               <br />
               our packaging products.
             </h1>
           </div>
-          <div class="my-4 sm:my-0">
-            <div
-              class="flex gap-2 flex-row items-center justify-between w-full"
-            >
-              <input
-                class="p-3 flex w-full rounded-md text-black outline-none border-none"
-                type="text"
-                placeholder="Enter Name"
-              />
-              <input
-                class="p-3 flex w-full rounded-md text-black outline-none border-none"
-                type="email"
-                placeholder="Enter Email"
-              />
-              <button
-                class="bg-blue-600 text-white rounded-md font-medium text-nowrap py-3 px-4"
-              >
-                Notify Me
-              </button>
-            </div>
+
+          <div class="newslatter-mail-input">
+            <input class="input" type="text" placeholder="Enter Name" />
+            <input class="input" type="email" placeholder="Enter Email" />
+            <!-- <button class="">Notify Me</button> -->
+            <input type="button" value="Notify Me" />
           </div>
         </div>
       </div>
