@@ -6,6 +6,14 @@
     <title>Contact Us</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="contact.css" />
+    <link rel="stylesheet" href="responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header>
@@ -133,49 +141,59 @@
     <div class="main-container contact__content__container">
       <div class="contact-us-cards-container">
         <div class="contact-card">
-          <img src="contact.png" alt="Phone Icon" class="icon" />
+          <img src="/images/contact.png" alt="Phone Icon" class="icon" />
           <p>If you need help, don't look far, call us today!</p>
           <b>+92-300-0000-000</b>
         </div>
         <div class="contact-card">
-          <img src="location.png" alt="Location Icon" class="icon" />
+          <img src="/images/location.png" alt="Location Icon" class="icon" />
           <p>Visit our office</p>
           <b>3501 Jack Northrop Ave, Hawthorne, CA United States</b>
         </div>
         <div class="contact-card">
-          <img src="mail.png" alt="Mail Icon" class="icon" />
+          <img src="/images/mail.png" alt="Mail Icon" class="icon" />
           <p>Do you have a project to work on? Send your details.</p>
           <b>info@valueBoxPrinting.com</b>
         </div>
       </div>
 
       <div class="contact-us-form">
-        <div class="form-header">
-          <img src="workTogether.png" alt="Work Icon" class="work-icon" />
-          <p>Work Together</p>
+        <div class="subheading">
+          <div class="form-header">
+            <img
+              src="/images/workTogether.png"
+              alt="Work Icon"
+              class="work-icon"
+            />
+            <p>Work Together</p>
+          </div>
           <h1>Tell us what you're Looking For</h1>
           <p>
             There are many variations of passages of lorem but the majority.
           </p>
         </div>
+
         <form class="form">
           <div class="form-row">
             <div class="input-group">
               <input type="text" placeholder="Name" />
-              <span class="icon user-icon"></span>
+
+              <i class="fa-solid fa-user"></i>
             </div>
             <div class="input-group">
               <input type="email" placeholder="Email" />
-              <span class="icon mail-icon"></span>
+
+              <i class="fa-solid fa-envelope"></i>
             </div>
             <div class="input-group full-width">
               <input type="number" placeholder="Phone" />
-              <span class="icon phone-icon"></span>
+
+              <i class="fa-solid fa-phone-flip"></i>
             </div>
           </div>
           <div class="input-group full-width">
             <input type="text" placeholder="Subject" />
-            <span class="icon subject-icon"></span>
+            <i class="fa-solid fa-calendar-week"></i>
           </div>
           <textarea placeholder="Your Message" rows="10"></textarea>
           <button type="submit" class="submit-btn">Send Your Message</button>
@@ -229,7 +247,9 @@
                     <a href="/"><i class="fas fa-arrow-right"></i> Home</a>
                   </li>
                   <li>
-                    <a href="/shop"><i class="fas fa-arrow-right"></i> Shop</a>
+                    <a href="/shop.html"
+                      ><i class="fas fa-arrow-right"></i> Shop</a
+                    >
                   </li>
                   <li>
                     <a href="/about"
