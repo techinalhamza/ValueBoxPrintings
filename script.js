@@ -96,12 +96,9 @@ function renderOptions() {
   navLinks.innerHTML = options
     .map(
       (option, index) => `
-      <li class=" ${
-        activeIndex === index
-          ? "text-black bg-white rounded-full py-[10px] px-[15px]"
-          : "text-white"
-      } transition-colors duration-300 ease-linear cursor-pointer font-bold" 
-          onclick="handleClick(${index})">
+      <li class="${
+        activeIndex === index ? "active-option" : "inactive-option"
+      }" onclick="handleClick(${index})">
         ${option}
       </li>
     `
@@ -122,13 +119,11 @@ function renderItems() {
       <a href="/coatingProduct/${item.name.replace(
         /\s+/g,
         "-"
-      )}" class="coating-card flex flex-col gap-2 bg-white rounded-2xl overflow-hidden">
-        <img src="${item.img}" alt="${
-        item.name
-      }" class="w-full h-40 object-cover">
-        <div class="coating-info p-4">
-          <h1 class="font-bold mb-2 text-base sm:text-sm">${item.name}</h1>
-          <p class="text-xs sm:text-[12px]">${item.desc}</p>
+      )}" class="coating-card">
+        <img src="${item.img}" alt="${item.name}" class="coating-image">
+        <div class="coating-info">
+          <h1 class="coating-title">${item.name}</h1>
+          <p class="coating-description">${item.desc}</p>
         </div>
       </a>
     `

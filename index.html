@@ -33,7 +33,7 @@
     />
 
     <!-- tailwind css -->
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script>
     <script>
       tailwind.config = {
         theme: {
@@ -65,7 +65,7 @@
           },
         },
       };
-    </script>
+    </script> -->
   </head>
   <body>
     <header>
@@ -129,7 +129,9 @@
         <ul class="nav-links">
           <!-- Products List Dropdown -->
           <li class="dropdown">
-            <a href="/shop">Products List <i class="fas fa-angle-down"></i></a>
+            <a href="/shop.html"
+              >Products List <i class="fas fa-angle-down"></i
+            ></a>
             <div class="dropdown-content">
               <div>
                 <h3>Category 1</h3>
@@ -946,6 +948,9 @@
         class="testimonials-grid"
         style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))"
       >
+        <div class="gradient-container">
+          <div class="gradient"></div>
+        </div>
         <!-- Testimonial Card 1 -->
         <div class="testimonial-card">
           <div class="star-rating">
@@ -1029,142 +1034,111 @@
     </div>
 
     <!-- Footer -->
-    <div class="footer-container bg-black py-16 sm:pt-2">
+    <div class="footer-container">
       <div class="main-container">
         <div class="footer-content">
-          <div class="footer-data sm:px-4">
-            <div class="footer-col mt-4 sm:col-span-2">
-              <h1
-                class="font-bold text-[22px] text-[#fac405d1] font-heading tracking-1px"
-              >
-                VALUE BOX PRINTING
-              </h1>
-              <div class="company-info mt-4">
-                <p class="text-[#999999]">
+          <div class="footer-data">
+            <div class="footer-col">
+              <h1 class="footer-logo">VALUE BOX PRINTING</h1>
+              <div class="company-info">
+                <p>
                   valueBox is your go-to for custom box printing. We create
                   packaging that reflects your brand, combining quality and
                   design to bring your ideas to life.
                 </p>
               </div>
             </div>
-            <div class="footer-col mt-4">
+
+            <div class="footer-col">
               <div class="hd">Quick Links</div>
               <div class="links">
                 <ul>
                   <li>
-                    <a href="/">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Home
-                    </a>
+                    <a href="/"><i class="fas fa-arrow-right"></i> Home</a>
                   </li>
                   <li>
-                    <a href="/shop">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Shop
-                    </a>
+                    <a href="/shop"><i class="fas fa-arrow-right"></i> Shop</a>
                   </li>
                   <li>
-                    <a href="/about">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      About us
-                    </a>
+                    <a href="/about"
+                      ><i class="fas fa-arrow-right"></i> About us</a
+                    >
                   </li>
-
                   <li>
-                    <a href="/contact">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Contact us
-                    </a>
+                    <a href="/contact.html"
+                      ><i class="fas fa-arrow-right"></i> Contact us</a
+                    >
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="footer-col mt-4">
+
+            <div class="footer-col">
               <div class="hd">Company</div>
               <div class="links">
                 <ul>
                   <li>
-                    <a href="/delivery-info">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Delivery Information
-                    </a>
+                    <a href="/delivery-info"
+                      ><i class="fas fa-arrow-right"></i> Delivery
+                      Information</a
+                    >
                   </li>
                   <li>
-                    <a href="/privacy-policy">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Privacy Policy
-                    </a>
+                    <a href="/privacy-policy"
+                      ><i class="fas fa-arrow-right"></i> Privacy Policy</a
+                    >
                   </li>
                   <li>
-                    <a href="/term-conditions">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Terms & Conditions
-                    </a>
+                    <a href="/term-conditions"
+                      ><i class="fas fa-arrow-right"></i> Terms & Conditions</a
+                    >
                   </li>
-
                   <li>
-                    <a to="/support">
-                      <i class="fa-solid fa-arrow-right"></i>
-                      Support Center
-                    </a>
+                    <a href="/support"
+                      ><i class="fas fa-arrow-right"></i> Support Center</a
+                    >
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="footer-col mt-4">
+
+            <div class="footer-col">
               <div class="hd">Social Links</div>
               <div class="links">
                 <ul>
                   <li>
-                    <a>
-                      <i class="fa-brands fa-facebook"></i>
-                      Facebook
-                    </a>
+                    <a><i class="fab fa-facebook"></i> Facebook</a>
                   </li>
                   <li>
-                    <a>
-                      <i class="fa-brands fa-instagram"></i>
-                      Instagram
-                    </a>
+                    <a><i class="fab fa-instagram"></i> Instagram</a>
                   </li>
                   <li>
-                    <a>
-                      <i class="fa-brands fa-tiktok"></i>
-                      Tiktok
-                    </a>
+                    <a><i class="fab fa-tiktok"></i> Tiktok</a>
                   </li>
                   <li>
-                    <a>
-                      <i class="fa-brands fa-linkedin"></i>
-                      Linkedin
-                    </a>
+                    <a><i class="fab fa-linkedin"></i> Linkedin</a>
                   </li>
                   <li>
-                    <a>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      WhatsApp
-                    </a>
+                    <a><i class="fab fa-whatsapp"></i> WhatsApp</a>
                   </li>
                 </ul>
               </div>
             </div>
-            <div class="footer-col mt-4">
-              <div class="text-white font-bold">Contact Us</div>
-              <div class="links mt-4 text-[#999999]">
-                <h1>
-                  <i class="fa-solid fa-location-dot"></i>
-                  <span>address:</span> 5171 W Campbell Ave undefined Kent, Utah
-                  53127 lahore
-                </h1>
 
+            <div class="footer-col">
+              <div class="contact-title">Contact Us</div>
+              <div class="contact-info">
                 <h1>
-                  <i class="fa-solid fa-headphones-simple"></i>
+                  <i class="fas fa-location-dot"></i> <span>Address:</span> 5171
+                  W Campbell Ave undefined Kent, Utah 53127 Lahore
+                </h1>
+                <h1>
+                  <i class="fas fa-headphones-simple"></i>
                   <span>Call Us:</span> (+91) - 540-025-124553
                 </h1>
-
                 <h1>
-                  <i class="fa-regular fa-paper-plane"></i>
-                  <span>Email:</span> inf0@valueBoxprinting.com
+                  <i class="fas fa-paper-plane"></i>
+                  <span>Email:</span> info@valueBoxprinting.com
                 </h1>
               </div>
             </div>
