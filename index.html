@@ -312,11 +312,11 @@
           <h1 class="title">Popular Print Products</h1>
           <ul class="tab-links">
             <!-- Tab Links -->
-            <li class="tab-item">Best Seller</li>
+            <li class="tab-item" id="bestSellerLink">Best Seller</li>
             <li>|</li>
-            <li class="tab-item">New Arrival</li>
+            <li class="tab-item" id="newArrivalLink">New Arrival</li>
             <li>|</li>
-            <li class="tab-item">Top Seller</li>
+            <li class="tab-item" id="topSellerLink">Top Seller</li>
             <!-- Shop All Button -->
             <li>
               <a href="/shop" class="shop-all-btn">
@@ -340,117 +340,8 @@
         </div>
         <!-- Product Lists -->
         <div id="product-list">
-          <div class="all-product-container">
+          <div class="all-product-container" id="popularProductsSection">
             <!-- Loop through products here -->
-            <a href="/singleProduct/sample-product" class="product-link">
-              <div class="product-card">
-                <div class="product-content">
-                  <!-- Product Image -->
-                  <div class="product-image-bx">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Product Name"
-                      class="product-image"
-                    />
-                  </div>
-                  <!-- Product Name and Description -->
-                  <div class="product-info">
-                    <h1 class="product-name">Product Name</h1>
-                    <p class="product-description">
-                      This is a sample product description that is concise and
-                      informative...
-                    </p>
-                  </div>
-                  <!-- Rating and Button -->
-                  <div class="product-btn">
-                    <div class="rating">★★★★☆</div>
-                    <button class="buy-now-btn">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/singleProduct/sample-product" class="product-link">
-              <div class="product-card">
-                <div class="product-content">
-                  <!-- Product Image -->
-                  <div class="product-image-bx">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Product Name"
-                      class="product-image"
-                    />
-                  </div>
-                  <!-- Product Name and Description -->
-                  <div class="product-info">
-                    <h1 class="product-name">Product Name</h1>
-                    <p class="product-description">
-                      This is a sample product description that is concise and
-                      informative...
-                    </p>
-                  </div>
-                  <!-- Rating and Button -->
-                  <div class="product-btn">
-                    <div class="rating">★★★★☆</div>
-                    <button class="buy-now-btn">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/singleProduct/sample-product" class="product-link">
-              <div class="product-card">
-                <div class="product-content">
-                  <!-- Product Image -->
-                  <div class="product-image-bx">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Product Name"
-                      class="product-image"
-                    />
-                  </div>
-                  <!-- Product Name and Description -->
-                  <div class="product-info">
-                    <h1 class="product-name">Product Name</h1>
-                    <p class="product-description">
-                      This is a sample product description that is concise and
-                      informative...
-                    </p>
-                  </div>
-                  <!-- Rating and Button -->
-                  <div class="product-btn">
-                    <div class="rating">★★★★☆</div>
-                    <button class="buy-now-btn">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <a href="/singleProduct/sample-product" class="product-link">
-              <div class="product-card">
-                <div class="product-content">
-                  <!-- Product Image -->
-                  <div class="product-image-bx">
-                    <img
-                      src="https://via.placeholder.com/150"
-                      alt="Product Name"
-                      class="product-image"
-                    />
-                  </div>
-                  <!-- Product Name and Description -->
-                  <div class="product-info">
-                    <h1 class="product-name">Product Name</h1>
-                    <p class="product-description">
-                      This is a sample product description that is concise and
-                      informative...
-                    </p>
-                  </div>
-                  <!-- Rating and Button -->
-                  <div class="product-btn">
-                    <div class="rating">★★★★☆</div>
-                    <button class="buy-now-btn">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </a>
-            <!-- Repeat similar blocks for other products -->
           </div>
         </div>
       </div>
@@ -1057,7 +948,9 @@
                     <a href="/"><i class="fas fa-arrow-right"></i> Home</a>
                   </li>
                   <li>
-                    <a href="/shop"><i class="fas fa-arrow-right"></i> Shop</a>
+                    <a href="/shop.html"
+                      ><i class="fas fa-arrow-right"></i> Shop</a
+                    >
                   </li>
                   <li>
                     <a href="/about.html"
@@ -1183,6 +1076,7 @@
         },
       });
     </script>
+    <script src="products.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="singleProduct.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>singleProduct</title>
   </head>
   <body>
@@ -17,18 +18,28 @@
 
       <!-- Product Content -->
       <div class="main-container">
-        <div class="product-content">
+        <div class="single-product-content">
           <!-- Product Image Section -->
-          <div class="product-image">
+          <div class="single-product-image">
             <div class="large-image">
-              <img src="product-image-large.jpg" alt="Product Large" />
+              <img
+                src="/images/productsImages/Cosmetics & Beauty/Body & Face Lotion Boxes.png"
+                alt="Product Large"
+              />
             </div>
+
             <div class="small-images">
               <div class="small-image-box">
-                <img src="product-image-1.jpg" alt="Product Small 1" />
+                <img
+                  src="/images/productsImages/Cosmetics & Beauty/Cosmetic Jar Boxes.png"
+                  alt="Product Small 1"
+                />
               </div>
               <div class="small-image-box">
-                <img src="product-image-2.jpg" alt="Product Small 2" />
+                <img
+                  src="images/productsImages/Cosmetics & Beauty/Cosmetic Lip Eyeliner Boxe.png"
+                  alt="Product Small 2"
+                />
               </div>
             </div>
           </div>
@@ -37,11 +48,166 @@
           <div class="product-info">
             <div class="product-name">Product Name</div>
             <div class="price">$10</div>
-            <div class="short-desc">Short product description goes here.</div>
+            <div class="short-desc">
+              Short product description goes here.Short product description goes
+              here.Short product description goes here.Short product description
+              goes here.Short product description goes here.
+            </div>
             <hr />
             <!-- Inquiry Form (Example Placeholder) -->
-            <div class="inquiry-form">
-              <p>Contact for more information</p>
+            <div class="single-product-inquiry-form">
+              <form>
+                <!-- First Row: Length, Width, Height -->
+                <div class="form-row thirds">
+                  <div class="field">
+                    <label for="length"
+                      >Length (inch) <span style="color: red">*</span></label
+                    >
+                    <input id="length" name="length" type="text" required />
+                  </div>
+                  <div class="field">
+                    <label for="width"
+                      >Width (inch) <span style="color: red">*</span></label
+                    >
+                    <input id="width" name="width" type="text" required />
+                  </div>
+                  <div class="field">
+                    <label for="height"
+                      >Height (inch) <span style="color: red">*</span></label
+                    >
+                    <input id="height" name="height" type="text" required />
+                  </div>
+                </div>
+
+                <!-- Second Row: Stock Option, Print Option, Finishing Option -->
+                <div class="form-row thirds">
+                  <div class="field">
+                    <label for="stockOption">Stock Option</label>
+                    <select id="stockOption" name="stockOption">
+                      <option value="">Select Print Option</option>
+                      <option value="Full_Color_Printing">
+                        Full Color Printing
+                      </option>
+                      <option value="1_Color_Printing">1 Color Printing</option>
+                      <option value="2_Color_Printing">2 Color Printing</option>
+                      <option value="3_Color_Printing">3 Color Printing</option>
+                      <option value="No_Printing">No Printing</option>
+                      <option value="PMS_Color_Printing">
+                        PMS Color Printing
+                      </option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="printOption">Print Option</label>
+                    <select id="printOption" name="printOption">
+                      <option value="">Select Stock Option</option>
+                      <option value="14_pt_Card_Stock">
+                        14 pt. Card Stock
+                      </option>
+                      <option value="16_pt_Card_Stock">
+                        16 pt. Card Stock
+                      </option>
+                      <option value="18_pt_Card_Stock">
+                        18 pt. Card Stock
+                      </option>
+                      <option value="24_pt_Card_Stock">
+                        24 pt. Card Stock
+                      </option>
+                      <option value="Brown_Kraft_Stock">
+                        Brown Kraft Stock
+                      </option>
+                      <option value="White_Kraft_Stock">
+                        White Kraft Stock
+                      </option>
+                      <option value="Brown_Corrugated">Brown Corrugated</option>
+                      <option value="White_Corrugated">White Corrugated</option>
+                      <option value="Texture_Stock">Texture Stock</option>
+                      <option value="Linen_Stock">Linen Stock</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div class="field">
+                    <label for="finishingOption">Finishing Option</label>
+                    <select id="finishingOption" name="finishingOption">
+                      <option value="">Select Finishing Option</option>
+                      <option value="Matte_Finish">Matte Finish</option>
+                      <option value="Spot_UV">
+                        Spot UV (Matte Surface + Glossy)
+                      </option>
+                      <option value="Aqueous_Coating">Aqueous Coating</option>
+                      <option value="Semi_Gloss_Finish">
+                        Semi Gloss Finish
+                      </option>
+                      <option value="Gold_Foiling">
+                        Gold Foiling (Glossy or Matte Finish)
+                      </option>
+                      <option value="Silver_Foiling">
+                        Silver Foiling (Glossy or Matte Finish)
+                      </option>
+                      <option value="Holographic_Foiling">
+                        Holographic Foiling (Glossy or Matte Finish)
+                      </option>
+                      <option value="Others">Others</option>
+                    </select>
+                  </div>
+                </div>
+
+                <!-- Third Row: Quantity, Full Name, Email -->
+                <div class="form-row thirds">
+                  <div class="field">
+                    <label for="quantity"
+                      >Quantity <span style="color: red">*</span></label
+                    >
+                    <input
+                      id="quantity"
+                      name="quantity"
+                      type="number"
+                      required
+                    />
+                  </div>
+                  <div class="field">
+                    <label for="fullName"
+                      >Full Name <span style="color: red">*</span></label
+                    >
+                    <input id="fullName" name="fullName" type="text" required />
+                  </div>
+                  <div class="field">
+                    <label for="company">Company Name</label>
+                    <input id="company" name="company" type="text" />
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="field">
+                    <label for="Phone">Phone Num</label>
+                    <input id="Phone" name="Phone" type="number" />
+                  </div>
+                  <div class="field">
+                    <label for="email"
+                      >Email Address <span style="color: red">*</span></label
+                    >
+                    <input id="email" name="email" type="email" required />
+                  </div>
+                </div>
+
+                <!-- Fourth Row: Job Details (Full Width) -->
+                <div class="mb-1">
+                  <label for="jobDetails">Details</label>
+                  <textarea
+                    id="jobDetails"
+                    name="jobDetails"
+                    rows="8"
+                    placeholder="Type Your Needs Here in Details"
+                  ></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <div>
+                  <button type="submit" class="button-submit">
+                    Get Price Quote <i class="fas fa-angle-right"></i>
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
