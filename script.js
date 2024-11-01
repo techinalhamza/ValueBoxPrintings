@@ -5,7 +5,6 @@ hamburger.addEventListener("click", () => {
   navLink.classList.toggle("mobile-nav");
 });
 
-// faq according functionality start
 function toggleAccordion(button) {
   const content = button.nextElementSibling;
   const isOpen = content.style.maxHeight;
@@ -27,91 +26,43 @@ function toggleAccordion(button) {
 
   document.querySelectorAll(".accordion-content").style.marginBottom = "4rem";
 }
-// faq according functionality end
 
 let products = [];
 
-// Fetch products from products.json
-const fetchProducts = async () => {
+async function fetchProducts() {
   try {
     const response = await fetch("products.json");
 
-    // Check if the response is okay (status in the range 200-299)
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
     const productsData = await response.json();
-    products = await productsData;
+    // console.log("Fetched Products Data:", productsData); // Log productsData for debugging
 
-    // Render best sellers by default after fetching products
+    products = productsData;
+
     bestSeller(products);
-    renderProductsOnShop(productsData);
   } catch (error) {
     console.error("Error fetching products:", error);
   }
-};
-
-// Loop through all products on the shop page
-
-const renderProductsOnShop = (products) => {
-  const listingProducts = document.getElementById("listingProducts");
-  listingProducts.innerHTML = ""; // Clear existing content
-
-  // Use map to generate the HTML structure and flatten with flatMap
-  const cluster = products
-    .flatMap((val) => {
-      return val.items.map((val_) => {
-        return `
-            <a href="/singleProduct/sample-product" class="product-link">
-              <div class="product-card">
-                <div class="product-content">
-                  <!-- Product Image -->
-                  <div class="product-image-bx">
-                    <img src="${val_.img}" alt="${
-          val_.name
-        }" class="product-image"/>
-                  </div>
-                  <!-- Product Name and Description -->
-                  <div class="product-info">
-                    <h1 class="product-name">${val_.name}</h1>
-                    <p class="product-description">${val_.desc.substr(
-                      0,
-                      50
-                    )}...</p>
-                  </div>
-                  <!-- Rating and Button -->
-                  <div class="product-btn">
-                    <div class="rating">★★★★☆</div>
-                    <button class="buy-now-btn">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-            </a>
-          `;
-      });
-    })
-    .join(""); // Join with an empty string to avoid commas
-
-  listingProducts.innerHTML = cluster;
-};
+}
 
 const bestSeller = (products) => {
+  // console.log(products);
   const popularProductsSection = document.getElementById(
     "popularProductsSection"
   );
   popularProductsSection.innerHTML = "";
 
-  // Flatten the popular products
   const popularProducts = products.flatMap((val) =>
     val.items.filter((val_) => val_.popular === "true")
   );
 
-  // Create the HTML structure for popular products
   const cluster = popularProducts
     .map((val_) => {
       return `
-          <a href="/singleProduct/sample-product" class="product-link">
+          <a href="/singleproduct.html?id=${val_.id}" class="product-link">
             <div class="product-card">
               <div class="product-content">
                 <!-- Product Image -->
@@ -138,9 +89,9 @@ const bestSeller = (products) => {
           </a>
         `;
     })
-    .join(""); // Join to create a single string for innerHTML
+    .join("");
 
-  popularProductsSection.innerHTML = cluster; // Set the innerHTML to the cluster
+  popularProductsSection.innerHTML = cluster;
 };
 
 const newArrival = (products) => {
@@ -158,7 +109,7 @@ const newArrival = (products) => {
   const cluster = newArrivalProducts
     .map((val_) => {
       return `
-          <a href="/singleProduct/sample-product" class="product-link">
+          <a href="/singleproduct.html?id=${val_.id}" class="product-link">
             <div class="product-card">
               <div class="product-content">
                 <!-- Product Image -->
@@ -189,6 +140,52 @@ const newArrival = (products) => {
 
   popularProductsSection.innerHTML = cluster; // Set the innerHTML to the cluster
 };
+const topSeller = (products) => {
+  const popularProductsSection = document.getElementById(
+    "popularProductsSection"
+  );
+  popularProductsSection.innerHTML = "";
+
+  // Flatten the new arrival products
+  const topSellerProducts = products.flatMap((val) =>
+    val.items.filter((val_) => val_.topSeller === "true")
+  );
+
+  const cluster = topSellerProducts
+    .map((val_) => {
+      return `
+          <a href="/singleproduct.html?id=${val_.id}" class="product-link">
+            <div class="product-card">
+              <div class="product-content">
+                <!-- Product Image -->
+                <div class="product-image-bx">
+                  <img src="${val_.img}" alt="${
+        val_.name
+      }" class="product-image"/>
+                </div>
+                <!-- Product Name and Description -->
+                <div class="product-info">
+                  <h1 class="product-name">${val_.name}</h1>
+                  <p class="product-description">${val_.desc.substr(
+                    0,
+                    50
+                  )}...</p>
+                </div>
+                <!-- Rating and Button -->
+                <div class="product-btn">
+                  <div class="rating">★★★★☆</div>
+                  <button class="buy-now-btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        `;
+    })
+    .join("");
+
+  popularProductsSection.innerHTML = cluster; // Set the innerHTML to the cluster
+};
+
 // Event listeners for tab links
 document
   .getElementById("bestSellerLink")
@@ -196,15 +193,14 @@ document
 document
   .getElementById("newArrivalLink")
   .addEventListener("click", () => newArrival(products));
-// Optionally add an event listener for Top Seller if implemented
-// document.getElementById("topSellerLink").addEventListener("click", () => topSeller(products));
+document
+  .getElementById("topSellerLink")
+  .addEventListener("click", () => topSeller(products));
 
-// Fetch products on page load
-fetchProducts();
+document.addEventListener("DOMContentLoaded", () => {
+  fetchProducts();
+});
 
-//  bestSellerLink.addEventListener("click", () => {
-//   bestSeller();
-// });
 // const options = [
 //   "COATING & LAMINATIONS",
 //   "PRINTING OPTIONS",

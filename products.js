@@ -6,7 +6,7 @@ const productdata = [
         id: "1",
         name: "Body & Face Lotion Boxes",
         desc: "Body & Face Lotion Boxes with full-color CMYK/PMS printing process 14pt, 18pt, and 24pt card stock available with Foiling, Embossing, Spot UV, and other custom print options. We fully customize your Body & Face Lotion Boxes at very low prices with no minimum order quantity. Fill in the quote form to get a price quote right away. FREE Shipping & Design Services.",
-        img: "/demo.png",
+        img: "/",
         images: ["/demo.png", "/demo.png", "/demo.png", "/demo.png"],
         newArrival: "true",
         cat: "Cosmetics & Beauty",

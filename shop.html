@@ -154,7 +154,7 @@
           <div class="product-result">
             <h3 class="">
               Showing results for
-              <span className="text-Blue">20</span>
+              <span id="productCount">20</span>
               products
             </h3>
           </div>
@@ -178,7 +178,7 @@
         <div id="product-list">
           <div class="all-product-container" id="listingProducts">
             <!-- Loop through products here -->
-
+            <h1>helo</h1>
             <!-- Repeat similar blocks for other products -->
           </div>
         </div>
@@ -339,7 +339,76 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="products.js"></script>
+    <!-- <script src="products.js"></script> -->
+    <!-- <script src="shop.js"></script> -->
     <script src="script.js"></script>
+    <script>
+      async function fetchProducts() {
+        const response = await fetch("products.json");
+        const productsData = await response.json();
+        // console.log(productsData);
+        renderProductsOnShop(productsData);
+      }
+      const renderProductsOnShop = (products) => {
+        console.log(products);
+        let listingProducts = document.getElementById("listingProducts");
+        let productCount = document.getElementById("productCount");
+
+        if (!listingProducts) {
+          console.error("Element with id 'listingProducts' not found!");
+          return;
+        }
+
+        // Calculate the total count of all products across categories
+        const totalProductCount = products.reduce(
+          (acc, val) => acc + val.items.length,
+          0
+        );
+        productCount.innerHTML = totalProductCount; // Set the total count to productCount
+
+        listingProducts.innerHTML = ""; // Clear existing content
+
+        // Generate HTML for all products
+        const cluster = products
+          .flatMap((val) => {
+            return val.items.map((val_) => {
+              return `
+          <a href="/singleproduct.html?id=${val_.id}" class="product-link">
+            <div class="product-card">
+              <div class="product-content">
+                <!-- Product Image -->
+                <div class="product-image-bx">
+                  <img src="${val_.img}" alt="${
+                val_.name
+              }" class="product-image"/>
+                </div>
+                <!-- Product Name and Description -->
+                <div class="product-info">
+                  <h1 class="product-name">${val_.name}</h1>
+                  <p class="product-description">${val_.desc.substr(
+                    0,
+                    50
+                  )}...</p>
+                </div>
+                <!-- Rating and Button -->
+                <div class="product-btn">
+                  <div class="rating">★★★★☆</div>
+                  <button class="buy-now-btn">Buy Now</button>
+                </div>
+              </div>
+            </div>
+          </a>
+        `;
+            });
+          })
+          .join(""); // Join to create a single string for innerHTML
+
+        listingProducts.innerHTML = cluster; // Set the HTML structure to the listingProducts element
+      };
+
+      document.addEventListener("DOMContentLoaded", () => {
+        fetchProducts();
+      });
+    </script>
   </body>
 </html>
